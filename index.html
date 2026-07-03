@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DHARANI DHARAN — ML Engineer, Web Developer & Creative</title>
+  <meta name="description" content="Portfolio of Dharani Dharan — Machine Learning Engineer, Web Developer, and Video Editor. Building intelligent solutions and stunning digital experiences." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ CUSTOM CURSOR ============ -->
+  <div class="cursor" id="cursor">
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+  </div>
+
+  <!-- ============ AMBIENT FLUID BACKGROUND ============ -->
+  <div class="ambient-background" aria-hidden="true">
+    <div class="ambient-blob blob-1"></div>
+    <div class="ambient-blob blob-2"></div>
+    <div class="ambient-blob blob-3"></div>
+    <div class="ambient-blob blob-4"></div>
+    <div class="ambient-blur-overlay"></div>
+  </div>
+
+  <!-- ============ MAGNIFICATION LENS ============ -->
+  <div class="cursor-lens" id="cursor-lens">
+    <div class="cursor-lens-blur"></div>
+    <div class="cursor-lens-clear"></div>
+    <div class="cursor-lens-ring"></div>
+  </div>
+
+  <!-- ============ PRELOADER ============ -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">WELCOME</div>
+      <div class="preloader-counter">
+        <span class="preloader-number" id="preloader-number">0</span>
+        <span class="preloader-percent">%</span>
+      </div>
+      <div class="preloader-bar">
+        <div class="preloader-bar-fill" id="preloader-bar-fill"></div>
+      </div>
+    </div>
+    <div class="preloader-wipe" id="preloader-wipe"></div>
+  </div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" data-cursor-magnetic>DD<span class="accent">.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link" data-cursor-magnetic>About</a></li>
+        <li><a href="#work" class="nav-link" data-cursor-magnetic>Work</a></li>
+        <li><a href="#services" class="nav-link" data-cursor-magnetic>Services</a></li>
+        <li><a href="#contact" class="nav-link" data-cursor-magnetic>Let's Talk</a></li>
+      </ul>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" data-cursor-magnetic>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============ MOBILE MENU OVERLAY ============ -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul class="mobile-menu-links">
+      <li><a href="#about" class="mobile-menu-link">About</a></li>
+      <li><a href="#work" class="mobile-menu-link">Work</a></li>
+      <li><a href="#services" class="mobile-menu-link">Services</a></li>
+      <li><a href="#contact" class="mobile-menu-link">Let's Talk</a></li>
+    </ul>
+    <div class="mobile-menu-footer">
+      <a href="mailto:hello@alexmorgan.dev">dharanidharan2709d@gmail.com</a>
+    </div>
+  </div>
+
+  <!-- ============ MAIN CONTENT ============ -->
+  <main id="smooth-wrapper">
+    <div id="smooth-content">
+
+      <!-- ===== HERO ===== -->
+      <section class="hero" id="hero">
+        <div class="hero-bg-grain"></div>
+        <div class="hero-content">
+          <div class="hero-overtitle">
+            <span class="hero-overtitle-line"></span>
+            <span class="hero-overtitle-text">FREE LANCER</span>
+          </div>
+          <h1 class="hero-title">
+            <span class="hero-title-line">Crafting Digital</span>
+            <span class="hero-title-line">Experiences with</span>
+            <span class="hero-title-line"><em>Intelligence</em></span>
+          </h1>
+          <p class="hero-subtitle" data-animate-fade>
+            ML Engineer · Web Developer · Video Editor — Turning ideas into intelligent, beautiful digital products.
+          </p>
+          <div class="hero-scroll-indicator" data-animate-fade>
+            <div class="hero-scroll-line"></div>
+            <span>Scroll to explore</span>
+          </div>
+        </div>
+        <!-- Hero Marquee Strip -->
+        <div class="marquee marquee--hero">
+          <div class="marquee-track">
+            <span>ML Engineer</span><span class="marquee-dot">◆</span>
+            <span>Web Developer</span><span class="marquee-dot">◆</span>
+            <span>Video Editor</span><span class="marquee-dot">◆</span>
+            <span>Creative Thinker</span><span class="marquee-dot">◆</span>
+            <span>ML Engineer</span><span class="marquee-dot">◆</span>
+            <span>Web Developer</span><span class="marquee-dot">◆</span>
+            <span>Video Editor</span><span class="marquee-dot">◆</span>
+            <span>Creative Thinker</span><span class="marquee-dot">◆</span>
+            <span>ML Engineer</span><span class="marquee-dot">◆</span>
+            <span>Web Developer</span><span class="marquee-dot">◆</span>
+            <span>Video Editor</span><span class="marquee-dot">◆</span>
+            <span>Creative Thinker</span><span class="marquee-dot">◆</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== ABOUT ===== -->
+      <section class="about section" id="about">
+        <div class="section-label">
+          <span class="section-number">01</span>
+          <span class="section-name">About</span>
+        </div>
+        <div class="about-grid">
+          <div class="about-content">
+            <h2 class="about-heading" data-split-text>
+              <span class="hero-title-line">Passionate about</span>
+              <span class="hero-title-line">building the <em>future</em></span>
+            </h2>
+            <div class="about-text" data-animate-lines>
+              <p>I'm Dharani, a Machine Learning enthusiast and creative developer who thrives at the intersection of technology and design. Currently diving deep into ML algorithms, neural networks, and data-driven solutions while building stunning web experiences on the side.</p>
+              <p>When I'm not training models or writing code, you'll find me editing cinematic videos in Premiere Pro and After Effects — bringing stories to life through motion and visuals.</p>
+              <p>I believe the best digital products are born when analytical thinking meets creative vision.</p>
+            </div>
+            <div class="about-stats">
+              <div class="stat" data-animate-stat>
+                <span class="stat-number" data-count="2">0</span>
+                <span class="stat-plus">+</span>
+                <span class="stat-label">Projects Built</span>
+              </div>
+              <div class="stat" data-animate-stat>
+                <span class="stat-number" data-count="1">0</span>
+                <span class="stat-plus">+</span>
+                <span class="stat-label">Years Learning</span>
+              </div>
+              <div class="stat" data-animate-stat>
+                <span class="stat-number" data-count="3">0</span>
+                <span class="stat-plus">+</span>
+                <span class="stat-label">Core Skills</span>
+              </div>
+            </div>
+            <div class="about-divider" data-animate-line></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== PROJECTS / WORK ===== -->
+      <section class="work section" id="work">
+        <div class="section-label">
+          <span class="section-number">02</span>
+          <span class="section-name">Selected Work</span>
+        </div>
+        <h2 class="work-heading" data-split-text>
+          <span class="hero-title-line">Featured</span>
+          <span class="hero-title-line"><em>Projects</em></span>
+        </h2>
+
+        <div class="work-cards" id="work-cards">
+          <!-- Project 1: Expense Tracker AI (Web App) -->
+          <div class="work-card" data-cursor-view>
+            <div class="work-card-image">
+              <div class="work-card-image-inner" style="background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);">
+                <div class="work-card-image-overlay">
+                  <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="work-card-icon">
+                    <rect x="25" y="20" width="50" height="60" rx="4" stroke="#c9a96e" stroke-width="1" fill="none"/>
+                    <line x1="25" y1="32" x2="75" y2="32" stroke="#c9a96e" stroke-width="0.5"/>
+                    <text x="50" y="28" text-anchor="middle" fill="#c9a96e" font-family="Inter" font-size="5" font-weight="600">EXPENSE AI</text>
+                    <rect x="30" y="38" width="18" height="28" rx="1" fill="#c9a96e" opacity="0.15"/>
+                    <rect x="30" y="50" width="18" height="16" rx="1" fill="#c9a96e" opacity="0.25"/>
+                    <rect x="30" y="56" width="18" height="10" rx="1" fill="#c9a96e" opacity="0.4"/>
+                    <rect x="52" y="38" width="18" height="28" rx="1" fill="#c9a96e" opacity="0.15"/>
+                    <rect x="52" y="44" width="18" height="22" rx="1" fill="#c9a96e" opacity="0.25"/>
+                    <rect x="52" y="52" width="18" height="14" rx="1" fill="#c9a96e" opacity="0.35"/>
+                    <circle cx="62" cy="73" r="3" stroke="#c9a96e" stroke-width="0.5" fill="none"/>
+                    <path d="M61 73 L62 71.5 L63 73" stroke="#c9a96e" stroke-width="0.5" fill="none"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="work-card-info">
+              <span class="work-card-category">Web App</span>
+              <h3 class="work-card-title">Expense Tracker AI</h3>
+              <p class="work-card-desc">AI-powered expense manager with a Groq AI assistant for real-time financial insights. Built with PostgreSQL on Neon, fully deployed via GitHub and Render. My first end-to-end deployed web app.</p>
+              <div class="work-card-tags">
+                <span>Groq AI</span><span>PostgreSQL</span><span>Neon</span><span>Render</span>
+              </div>
+              <div class="work-card-links">
+                <!-- ✏️ PROJECT 1 GITHUB: Replace the URL below with your GitHub repo link -->
+                <a href="https://github.com/DharaniDharan2709/expensetrackerAI" target="_blank" rel="noopener" class="work-card-link" data-cursor-magnetic aria-label="GitHub Repository">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>GitHub</span>
+                </a>
+                <!-- ✏️ PROJECT 1 LIVE APP: Replace the URL below with your deployed app link -->
+                <a href="https://lnkd.in/gp8awhB2" target="_blank" rel="noopener" class="work-card-link work-card-link--live" data-cursor-magnetic aria-label="Live App">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  <span>Live App</span>
+                </a>
+              </div>
+              <span class="work-card-year">2026</span>
+            </div>
+          </div>
+
+          <!-- Project 2: Expense Classifier (Machine Learning) -->
+          <div class="work-card" data-cursor-view>
+            <div class="work-card-image">
+              <div class="work-card-image-inner" style="background: linear-gradient(135deg, #1a0a2e 0%, #2d1b69 50%, #44318d 100%);">
+                <div class="work-card-image-overlay">
+                  <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="work-card-icon">
+                    <circle cx="50" cy="35" r="12" stroke="#c9a96e" stroke-width="1" fill="none"/>
+                    <circle cx="30" cy="65" r="10" stroke="#c9a96e" stroke-width="1" fill="none"/>
+                    <circle cx="70" cy="65" r="10" stroke="#c9a96e" stroke-width="1" fill="none"/>
+                    <line x1="44" y1="44" x2="35" y2="57" stroke="#c9a96e" stroke-width="0.7"/>
+                    <line x1="56" y1="44" x2="65" y2="57" stroke="#c9a96e" stroke-width="0.7"/>
+                    <line x1="40" y1="65" x2="60" y2="65" stroke="#c9a96e" stroke-width="0.7"/>
+                    <text x="50" y="37" text-anchor="middle" fill="#c9a96e" font-family="Inter" font-size="5">NB</text>
+                    <text x="30" y="67" text-anchor="middle" fill="#c9a96e" font-family="Inter" font-size="4">FOOD</text>
+                    <text x="70" y="67" text-anchor="middle" fill="#c9a96e" font-family="Inter" font-size="4">UBER</text>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="work-card-info">
+              <span class="work-card-category work-card-category--ml">Machine Learning</span>
+              <h3 class="work-card-title">Multi-Category Expense Classifier</h3>
+              <p class="work-card-desc">ML engine that classifies raw transaction text into categories like Entertainment, Transport, and Food using Multinomial Naive Bayes. Built with Scikit-Learn and Pandas for data preprocessing and feature engineering.</p>
+              <div class="work-card-tags">
+                <span>Scikit-Learn</span><span>Pandas</span><span>Naive Bayes</span><span>Python</span>
+              </div>
+              <div class="work-card-links">
+                <!-- ✏️ PROJECT 2 GITHUB: Replace the URL below with your GitHub repo link -->
+                <a href="https://github.com/DharaniDharan2709/expense-category-classifier" target="_blank" rel="noopener" class="work-card-link" data-cursor-magnetic aria-label="GitHub Repository">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+              <span class="work-card-year">2026</span>
+            </div>
+          </div>
+
+          <!-- Project 3: Digit Recognizer (Machine Learning) -->
+          <div class="work-card" data-cursor-view>
+            <div class="work-card-image">
+              <div class="work-card-image-inner" style="background: linear-gradient(135deg, #1a1a0a 0%, #2e2e1a 50%, #4a4a2a 100%);">
+                <div class="work-card-image-overlay">
+                  <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="work-card-icon">
+                    <rect x="25" y="22" width="50" height="56" rx="3" stroke="#c9a96e" stroke-width="1" fill="none"/>
+                    <rect x="30" y="30" width="24" height="30" rx="2" stroke="#c9a96e" stroke-width="0.5" fill="none"/>
+                    <text x="42" y="52" text-anchor="middle" fill="#c9a96e" font-family="Georgia" font-size="18" font-weight="bold" opacity="0.7">7</text>
+                    <line x1="60" y1="35" x2="70" y2="35" stroke="#c9a96e" stroke-width="0.5"/>
+                    <line x1="60" y1="40" x2="68" y2="40" stroke="#c9a96e" stroke-width="0.5"/>
+                    <line x1="60" y1="45" x2="70" y2="45" stroke="#c9a96e" stroke-width="0.5"/>
+                    <rect x="60" y="50" width="10" height="6" rx="1" fill="#c9a96e" opacity="0.3"/>
+                    <text x="65" y="55" text-anchor="middle" fill="#c9a96e" font-family="Inter" font-size="4">CNN</text>
+                    <text x="50" y="72" text-anchor="middle" fill="#c9a96e" font-family="Inter" font-size="4">MNIST</text>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="work-card-info">
+              <span class="work-card-category work-card-category--ml">Machine Learning</span>
+              <h3 class="work-card-title">Handwritten Digit Recognizer</h3>
+              <p class="work-card-desc">Interactive CNN-based digit recognizer trained on the MNIST dataset using TensorFlow/Keras. Features a custom drawing interface built from scratch with Python & Tkinter for real-time predictions.</p>
+              <div class="work-card-tags">
+                <span>TensorFlow</span><span>Keras</span><span>CNN</span><span>Tkinter</span>
+              </div>
+              <div class="work-card-links">
+                <!-- ✏️ PROJECT 3 GITHUB: Replace the URL below with your GitHub repo link -->
+                <a href="https://github.com/DharaniDharan2709/mnist-digit-predictor" target="_blank" rel="noopener" class="work-card-link" data-cursor-magnetic aria-label="GitHub Repository">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+              <span class="work-card-year">2026</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== MARQUEE DIVIDER ===== -->
+      <div class="marquee marquee--cta">
+        <div class="marquee-track marquee-track--stroke">
+          <span>Let's Work Together</span><span class="marquee-dash">—</span>
+          <span>Let's Work Together</span><span class="marquee-dash">—</span>
+          <span>Let's Work Together</span><span class="marquee-dash">—</span>
+          <span>Let's Work Together</span><span class="marquee-dash">—</span>
+          <span>Let's Work Together</span><span class="marquee-dash">—</span>
+          <span>Let's Work Together</span><span class="marquee-dash">—</span>
+        </div>
+      </div>
+
+      <!-- ===== SERVICES ===== -->
+      <section class="services section" id="services">
+        <div class="section-label">
+          <span class="section-number">03</span>
+          <span class="section-name">Services</span>
+        </div>
+        <h2 class="services-heading" data-split-text>
+          <span class="hero-title-line">What I</span>
+          <span class="hero-title-line"><em>Can Do</em></span>
+        </h2>
+
+        <div class="services-list">
+          <div class="service-item" data-service-index="0">
+            <div class="service-item-header">
+              <span class="service-item-number">01</span>
+              <h3 class="service-item-title">Machine Learning Solutions</h3>
+              <div class="service-item-toggle">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <line x1="12" y1="5" x2="12" y2="19" class="service-toggle-v"/>
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-item-body">
+              <p>From data preprocessing to model deployment — I build end-to-end ML pipelines. Neural networks, NLP, computer vision, and predictive analytics tailored to solve real problems.</p>
+              <div class="service-tags">
+                <span>Python</span><span>TensorFlow</span><span>PyTorch</span><span>Scikit-learn</span>
+              </div>
+            </div>
+            <div class="service-item-line"></div>
+          </div>
+
+          <div class="service-item" data-service-index="1">
+            <div class="service-item-header">
+              <span class="service-item-number">02</span>
+              <h3 class="service-item-title">Web Development</h3>
+              <div class="service-item-toggle">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <line x1="12" y1="5" x2="12" y2="19" class="service-toggle-v"/>
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-item-body">
+              <p>Responsive, high-performance websites with smooth animations and modern UI/UX. From landing pages to full-stack applications — built with clean, scalable code.</p>
+              <div class="service-tags">
+                <span>HTML/CSS</span><span>JavaScript</span><span>React</span><span>GSAP</span>
+              </div>
+            </div>
+            <div class="service-item-line"></div>
+          </div>
+
+          <div class="service-item" data-service-index="2">
+            <div class="service-item-header">
+              <span class="service-item-number">03</span>
+              <h3 class="service-item-title">Video Editing & Motion</h3>
+              <div class="service-item-toggle">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <line x1="12" y1="5" x2="12" y2="19" class="service-toggle-v"/>
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-item-body">
+              <p>Cinematic edits, color grading, motion graphics, and visual effects. I bring stories to life using Premiere Pro and After Effects with a keen eye for pacing and emotion.</p>
+              <div class="service-tags">
+                <span>Premiere Pro</span><span>After Effects</span><span>Color Grading</span><span>VFX</span>
+              </div>
+            </div>
+            <div class="service-item-line"></div>
+          </div>
+
+          <div class="service-item" data-service-index="3">
+            <div class="service-item-header">
+              <span class="service-item-number">04</span>
+              <h3 class="service-item-title">Creative Design</h3>
+              <div class="service-item-toggle">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <line x1="12" y1="5" x2="12" y2="19" class="service-toggle-v"/>
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                </svg>
+              </div>
+            </div>
+            <div class="service-item-body">
+              <p>Visual identity systems, UI concepts, and creative direction. I merge analytical thinking with artistic vision to create designs that feel both intelligent and beautiful.</p>
+              <div class="service-tags">
+                <span>UI/UX</span><span>Figma</span><span>Branding</span><span>Typography</span>
+              </div>
+            </div>
+            <div class="service-item-line"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CONTACT ===== -->
+      <section class="contact section" id="contact">
+        <div class="section-label">
+          <span class="section-number">04</span>
+          <span class="section-name">Contact</span>
+        </div>
+        <div class="contact-content">
+          <h2 class="contact-heading" data-split-text>
+            <span class="hero-title-line">Let's Create</span>
+            <span class="hero-title-line">Something</span>
+            <span class="hero-title-line"><em>Amazing</em></span>
+          </h2>
+          <p class="contact-subtext" data-animate-fade>
+            Have a project in mind or just want to chat? I'd love to hear from you.
+          </p>
+          <a href="mailto:dharanidharan2709d@gmail.com" class="contact-email" data-cursor-magnetic id="contact-email">
+            dharanidharan2709d@gmail.com
+          </a>
+          <div class="contact-socials" data-animate-fade>
+            <a href="https://github.com/DharaniDharan2709" class="social-link" data-cursor-magnetic>GitHub</a>
+            <a href="https://www.linkedin.com/in/dharani-dharan-b57119397/" class="social-link" data-cursor-magnetic>LinkedIn</a>
+            <a href="https://www.instagram.com/mightbedharani/" class="social-link" data-cursor-magnetic>Instagram</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== FOOTER ===== -->
+      <footer class="footer">
+        <div class="footer-inner">
+          <span class="footer-copy">Dharani Dharan . All rights reserved.</span>
+          <button class="footer-top" id="back-to-top" data-cursor-magnetic>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
+              <line x1="10" y1="16" x2="10" y2="4"/>
+              <polyline points="4,9 10,3 16,9"/>
+            </svg>
+            <span>Back to Top</span>
+          </button>
+        </div>
+      </footer>
+
+    </div>
+  </main>
+
+  <!-- CDN Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
+
+  <!-- Main Script -->
+  <script src="script.js"></script>
+</body>
+</html>
+
